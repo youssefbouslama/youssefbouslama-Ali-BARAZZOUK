@@ -111,7 +111,7 @@ protected:
     void closeEvent(QCloseEvent* e) override;
     void ToDoApp::closeEvent(QCloseEvent* e){
     
-    QFile file("C:/Users/zakariae zaoui/Desktop/alo.txt");
+    QFile file("C:/Users/youssefb/Desktop/QSQ.txt");
     if(file.open(QIODevice::ReadWrite | QIODevice::Text)){
         QTextStream out(&file);
         
@@ -133,7 +133,7 @@ protected:
 ```
 - to open tasks (we decide where to add this item by checking the first character of the line)
 ```cpp
-      QFile file("C:/Users/zakariae zaoui/Desktop/alo.txt");
+      QFile file("C:/Users/youssefb/Desktop/QSQ.txt");
 
       if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
             return;
